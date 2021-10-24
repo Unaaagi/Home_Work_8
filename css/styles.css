@@ -1,0 +1,309 @@
+/*Task 1*/
+.block {
+   background-color: rgb(226, 226, 226);
+   margin: 20px 0px;
+   max-width: 100px;
+   padding: 25px 0px;
+   text-align: center;
+   box-shadow: 0px 10px 1px 2px black;
+   border-radius: 5%;
+}
+
+.link {
+	color: green;
+   font-size: 18px;
+}
+
+.link:hover {
+	color: greenyellow;
+}
+/*-------------Task 2---------------*/
+.block_2 {
+   background-color: rgb(226, 226, 226);
+   margin: 20px 0px;
+   max-width: 100px;
+   padding: 25px 0px;
+   text-align: center;
+   box-shadow: 0px 10px 1px 2px black;
+   border-radius: 5%;
+}
+
+.link_2 {
+   color: green;
+   font-size: 18px;
+   opacity: 0;
+   visibility: hidden;
+}
+
+.link_2:focus {
+   outline: 2px dashed green;
+}
+
+.block_2:hover .link_2 {
+   opacity: 1;
+   visibility: visible;
+}
+/*-------------Task 3-----------*/
+
+.block_3 {
+   text-align: center;
+}
+.button {
+   color: green;
+   font-size: 18px;
+   box-shadow: 0px 10px 0px 2px black;
+   border-radius: 5%;
+   max-width: 100px;
+   padding: 25px 0px;
+   background-color: rgb(226, 226, 226);
+   margin: 20px 0px;
+   display: block;
+}
+
+.button:hover {
+   background-color: rgb(211, 210, 210);
+}
+.button:visited {
+   color: rgb(157, 74, 235);
+}
+.button:active {
+   color: purple;
+   box-shadow: 0px 2px 1px 1px black;
+}
+
+.hidden {
+   padding: 20px;
+   color: white;
+   display: none;
+   margin-bottom: 30px;
+   background-color: yellowgreen;
+}
+.hidden:target {
+   display: block;
+}
+/*-------------Task 4------------*/
+.text {
+   margin: 0px 0px 20px 0px;
+}
+.text p {
+   margin: 0px 0px 20px 0px;
+}
+
+.text p:first-of-type {
+   color: rgb(60, 255, 0);
+   margin-top: 40px;
+}
+.text *:first-child {
+   color: turquoise;
+}
+
+.text p:last-of-type {
+   color: tomato;
+}
+.text *:last-child {
+   color: turquoise;
+}
+.text *:last-of-type {
+   margin-bottom: 50px;
+}
+
+.text p:nth-child(3) {
+   color: violet;
+}
+
+
+.text_2 p:not(:last-child) {
+   margin-bottom: 20px;
+}
+.text_2 p:nth-child(odd) {
+   color: rgb(185, 185, 0);
+}
+.text_2 p:nth-child(even) {
+   color: darkgray;
+}
+
+.list {
+   margin-bottom: 50px;
+}
+
+.list li { 
+   margin: 40px 0px 20px 0px;
+}
+
+.list li::before {
+   content: "";
+   background-color: black;
+   border-radius: 50%;
+   height: 10px;
+   width: 10px;
+   display: inline-block;
+   vertical-align: top;
+   margin: 2px 10px 0px -30px;
+
+}
+/*-----Task 5-----*/
+.choose_block {
+   margin-bottom: 50px;
+   max-width: 255px;
+   height: 206px;
+   background-color: #252525;
+   border-radius: 5%;
+}
+.title {
+   font-size: 22px;
+   line-height: 26px;
+   letter-spacing: -0.275px;
+   text-transform: capitalize;
+   padding: 24px 0px 0px 24px;
+   color: #FFFFFF;
+}
+.subtitle {
+   font-size: 13px;
+   line-height: 18px;
+   letter-spacing: -0.1625px;
+   padding: 0px 24px 0px 24px;
+   color: rgba(255, 255, 255, 0.5);
+}
+
+.title::after {
+   content: "";
+   display: inline-block;
+   background-color: #34C759;
+   height: 2px;
+   width: 56px;
+   margin: 15px 0px 24px 0px;
+}
+/*------Task 6------*/
+.dog_block {
+   max-width: 1020px;
+}
+.dog_subtitle {
+   display: inline-block;
+   font-size: 12px;
+line-height: 24px;
+display: flex;
+align-items: center;
+letter-spacing: 2.5px;
+text-transform: uppercase;
+margin-bottom: 33px;
+color: #5D62B5;
+
+}
+.dog_title {
+   font-size: 36px;
+line-height: 42px;
+margin-bottom: 68px;
+color: #000000;
+}
+.dog_subtitle::before {
+   content: "";
+   display: inline-block;
+   width: 28px;
+	height: 27px;
+   margin-right: 5px;
+   background: url("../img/Overline_Mark.png") 0 0 no-repeat;
+}
+
+
+.love {
+   max-width: 324px;
+   margin-right: 12px;
+   display: inline-block;
+}
+.love_title {
+   font-weight: 900;
+font-size: 19px;
+line-height: 26px;
+margin: 0px 0px 0px 12px;
+color: #F2726F;
+}
+.love_subtitle {
+   font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.15px;
+margin-left: 86px;
+color: #4B4B4B;
+}
+
+.love_title::before {
+   content: "";
+   display: inline-block;
+   width: 63px;
+   height: 63px;
+   margin-right: 10px;
+   vertical-align: top;
+   background: url("../img/dog_love_24x.png") 0 0 no-repeat;
+}
+
+
+
+
+/*------------------------------------*/
+.veterian {
+   max-width: 324px;
+   display: inline-block;
+   margin-right: 12px;
+}
+.veterian_title {
+   font-weight: 900;
+   font-size: 19px;
+   line-height: 26px;
+   margin: 0px 0px 0px 12px;
+   color: #F2726F;
+}
+.veterian_subtitle {
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.15px;
+   margin-left: 86px;
+   color: #4B4B4B;
+}
+
+.veterian_title::before {
+   content: "";
+   display: inline-block;
+   width: 63px;
+   height: 63px;
+   margin-right: 10px;
+   vertical-align: top;
+   background: url("../img/dog_vet_24x.png") 0 0 no-repeat;
+}
+
+
+
+/*---------------------------------------------*/
+.cameras {
+   max-width: 324px;
+   display: inline-block;
+}
+.cameras_title {
+   font-weight: 900;
+   font-size: 19px;
+   line-height: 26px;
+   margin: 0px 0px 0px 12px;
+   color: #F2726F;
+}
+.cameras_subtitle {
+   font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.15px;
+margin-left: 86px;
+color: #4B4B4B;
+}
+
+.cameras_title::before {
+   content: "";
+   display: inline-block;
+   width: 63px;
+   height: 63px;
+   margin-right: 10px;
+   vertical-align: top;
+   background: url("../img/dog_stream_24x.png") 0 0 no-repeat;
+}
+
+.cameras:hover,
+.veterian:hover,
+.love:hover {
+   box-shadow: 0 0 10px 1px #5050507a inset, 0 0 5px 1px grey;
+   border-radius: 5%;
+}
